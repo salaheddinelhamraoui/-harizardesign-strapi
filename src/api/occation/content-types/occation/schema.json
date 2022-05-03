@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "occations",
+  "info": {
+    "singularName": "occation",
+    "pluralName": "occations",
+    "displayName": "Occations",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "occations"
+    }
+  }
+}

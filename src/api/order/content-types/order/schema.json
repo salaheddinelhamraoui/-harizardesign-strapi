@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Orders",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::country.country",
+      "inversedBy": "orders"
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "zipCode": {
+      "type": "string",
+      "required": true
+    },
+    "tel": {
+      "type": "string",
+      "required": true
+    },
+    "additionalInformation": {
+      "type": "text"
+    },
+    "subTotal": {
+      "type": "decimal",
+      "required": true
+    },
+    "DeliveryFees": {
+      "type": "decimal",
+      "required": true
+    },
+    "total": {
+      "type": "decimal",
+      "required": true
+    },
+    "OrderStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Pending Confirmation",
+        "In Progress",
+        "Delivered",
+        "Completed",
+        "Canceled"
+      ],
+      "default": "Pending Confirmation"
+    },
+    "paymentType": {
+      "type": "enumeration",
+      "enum": [
+        "Cash On Delivery",
+        "Credit Or Debit Card"
+      ],
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "orders"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "orders"
+    },
+    "orderSpecifications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.order-specifications"
+    }
+  }
+}

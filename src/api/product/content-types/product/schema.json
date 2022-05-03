@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "price": {
+      "type": "integer",
+      "required": true,
+      "unique": false
+    },
+    "priceOffer": {
+      "type": "integer"
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true
+    },
+    "colors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::color.color",
+      "inversedBy": "products"
+    },
+    "occations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::occation.occation",
+      "inversedBy": "products"
+    },
+    "sizes_letters": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::size-letters.size-letters",
+      "inversedBy": "products"
+    },
+    "sizes_numbers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::size-numbers.size-numbers",
+      "inversedBy": "products"
+    },
+    "types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::type.type",
+      "inversedBy": "products"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categorie.categorie"
+    },
+    "smallDescription": {
+      "type": "text"
+    },
+    "additionalInformation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.additional-information"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::order.order",
+      "mappedBy": "products"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_product_order_specifications",
+  "info": {
+    "displayName": "orderSpecifications",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "selectedSizeLitter": {
+      "type": "string"
+    },
+    "selectedSizeNumber": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "image": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "integer"
+    },
+    "selectedColor": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
