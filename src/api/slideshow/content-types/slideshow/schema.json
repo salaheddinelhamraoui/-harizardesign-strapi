@@ -12,33 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "subTitle1": {
-      "type": "string"
-    },
-    "subTitle2": {
-      "type": "string"
-    },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "link": {
-      "type": "string"
-    },
-    "linkText": {
-      "type": "string"
+    "slideShowElement": {
+      "type": "component",
+      "repeatable": true,
+      "component": "website.slideshow-element"
     }
   }
 }

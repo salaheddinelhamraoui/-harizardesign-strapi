@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_website_slideshow_elements",
+  "info": {
+    "displayName": "SlideshowElement",
+    "icon": "signature"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subTitle1": {
+      "type": "string"
+    },
+    "subTitle2": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
