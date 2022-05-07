@@ -2,14 +2,15 @@
   "collectionName": "components_website_slideshow_elements",
   "info": {
     "displayName": "SlideshowElement",
-    "icon": "signature"
+    "icon": "signature",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "subTitle1": {
       "type": "string"
@@ -18,14 +19,15 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "linkText": {
       "type": "string"
