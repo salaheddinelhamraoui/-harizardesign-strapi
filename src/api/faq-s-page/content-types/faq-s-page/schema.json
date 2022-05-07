@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "faq_s_pages",
+  "info": {
+    "singularName": "faq-s-page",
+    "pluralName": "faq-s-pages",
+    "displayName": "FAQ's Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -24,16 +24,6 @@
       "type": "string",
       "required": true
     },
-    "country": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::country.country",
-      "inversedBy": "orders"
-    },
-    "city": {
-      "type": "string",
-      "required": true
-    },
     "zipCode": {
       "type": "string",
       "required": true
@@ -92,6 +82,12 @@
       "type": "component",
       "repeatable": true,
       "component": "product.order-specifications"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::city.city",
+      "inversedBy": "orders"
     }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "shipping_and_returns",
+  "info": {
+    "singularName": "shipping-and-return",
+    "pluralName": "shipping-and-returns",
+    "displayName": "Shipping & Returns"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

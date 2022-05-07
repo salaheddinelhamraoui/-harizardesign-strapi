@@ -23,9 +23,6 @@
                               "title": {
                                 "type": "string"
                               },
-                              "description": {
-                                "type": "string"
-                              },
                               "image": {
                                 "type": "object",
                                 "properties": {
@@ -395,6 +392,9 @@
                                     }
                                   }
                                 }
+                              },
+                              "description": {
+                                "type": "string"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -979,9 +979,6 @@
                             "title": {
                               "type": "string"
                             },
-                            "description": {
-                              "type": "string"
-                            },
                             "image": {
                               "type": "object",
                               "properties": {
@@ -1351,6 +1348,9 @@
                                   }
                                 }
                               }
+                            },
+                            "description": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -1824,9 +1824,6 @@
                       "title": {
                         "type": "string"
                       },
-                      "description": {
-                        "type": "string"
-                      },
                       "image": {
                         "oneOf": [
                           {
@@ -1837,6 +1834,9 @@
                           }
                         ],
                         "example": "string or id"
+                      },
+                      "description": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
