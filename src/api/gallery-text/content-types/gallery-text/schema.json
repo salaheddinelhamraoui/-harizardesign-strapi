@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "gallery_texts",
+  "info": {
+    "singularName": "gallery-text",
+    "pluralName": "gallery-texts",
+    "displayName": "Gallery Text"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}
