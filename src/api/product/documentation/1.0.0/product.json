@@ -2782,6 +2782,9 @@
                                                                             }
                                                                           }
                                                                         },
+                                                                        "deliveryType": {
+                                                                          "type": "string"
+                                                                        },
                                                                         "createdAt": {
                                                                           "type": "string",
                                                                           "format": "date-time"
@@ -6169,6 +6172,9 @@
                                                                           }
                                                                         }
                                                                       },
+                                                                      "deliveryType": {
+                                                                        "type": "string"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -9495,6 +9501,9 @@
                                                                           }
                                                                         }
                                                                       },
+                                                                      "deliveryType": {
+                                                                        "type": "string"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -12790,6 +12799,9 @@
                                                                             }
                                                                           }
                                                                         }
+                                                                      },
+                                                                      "deliveryType": {
+                                                                        "type": "string"
                                                                       },
                                                                       "createdAt": {
                                                                         "type": "string",

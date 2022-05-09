@@ -22,11 +22,11 @@
     },
     "address": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "zipCode": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "tel": {
       "type": "string",
@@ -88,6 +88,9 @@
       "relation": "manyToOne",
       "target": "api::city.city",
       "inversedBy": "orders"
+    },
+    "deliveryType": {
+      "type": "string"
     }
   }
 }
